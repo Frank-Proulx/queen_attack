@@ -9,5 +9,9 @@ describe('Array#queen_attack?') do
   it('is true if the horizontal coordinates are equal for both positions') do
     expect(queen_attack?([1,1],[1,5])).to(eq(true))
   end
+
+  it('is true if the vertical coordinates are equal fot both positions') do
+    expect(queen_attack?([5,4],[6,4])).to(eq(true))
+  end
   
 end
